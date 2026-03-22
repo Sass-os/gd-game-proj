@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://vglg1oethy6q"]
 
+[ext_resource type="Script" uid="uid://emo57qqiijvl" path="res://scenes/world.gd" id="1_k0juu"]
 [ext_resource type="Texture2D" uid="uid://ci2karmwwh04t" path="res://PrototypeTilemap16x16.png" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://bedpdfng4cgi8" path="res://scenes/player.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://c8dco8xnegi3t" path="res://scenes/camera.tscn" id="3_4wyf3"]
@@ -391,6 +392,7 @@ terrain_set_0/terrain_0/color = Color(0.8117647, 0.7647059, 0.2509804, 1)
 sources/0 = SubResource("TileSetAtlasSource_rwgxs")
 
 [node name="world" type="Node2D" unique_id=1492365288]
+script = ExtResource("1_k0juu")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=382272275]
 tile_map_data = PackedByteArray("AAABAAEAAAABAAMAAAACAAEAAAAHAAMAAAADAAEAAAACAAAAAAACAAIAAAABAAIAAAADAAIAAAAJAAAAAAAEAAEAAAACAAAAAAAJAAEAAAABAAMAAAAKAAEAAAAHAAMAAAALAAEAAAACAAAAAAAKAAIAAAABAAIAAAAMAAEAAAAEAAMAAAALAAIAAAAIAAAAAAARAAEAAAABAAMAAAASAAEAAAAHAAMAAAASAAIAAAABAAIAAAATAAEAAAACAAAAAAATAAIAAAAJAAAAAAAUAAEAAAACAAAAAAAaAAEAAAABAAMAAAAbAAEAAAAHAAMAAAAcAAEAAAACAAAAAAATAAMAAAABAAIAAAAUAAIAAAAHAAAAAAAVAAEAAAAEAAMAAAAbAAIAAAABAAIAAAAhAAEAAAABAAMAAAAjAAIAAAAJAAAAAAAkAAEAAAACAAAAAAAjAAEAAAACAAAAAAAiAAEAAAAHAAMAAAAiAAIAAAABAAIAAAAmAAEAAAADAAMAAAAkAAIAAAAHAAAAAAAlAAEAAAAEAAMAAAAlAAIAAAADAAIAAAAkAAMAAAADAAIAAAAjAAMAAAABAAIAAAAcAAIAAAAIAAAAAAAdAAEAAAAEAAMAAAADAAMAAAABAAIAAAAEAAMAAAADAAIAAAAEAAIAAAAHAAAAAAAFAAIAAAADAAIAAAAFAAEAAAAEAAMAAAAGAAEAAAADAAMAAAAeAAEAAAADAAMAAAAdAAIAAAADAAIAAAAcAAMAAAAAAAIAAAALAAMAAAAAAAIAAAAMAAIAAAADAAIAAAANAAEAAAADAAMAAAAWAAEAAAADAAMAAAAVAAIAAAADAAIAAAAUAAMAAAADAAIAAAA=")
@@ -399,10 +401,14 @@ tile_set = SubResource("TileSet_4wyf3")
 [node name="CameraBody2D" parent="." unique_id=400209643 node_paths=PackedStringArray("Target") instance=ExtResource("3_4wyf3")]
 editor_description = "Folows target
 "
-position = Vector2(318, -32)
+position = Vector2(320, -49)
 limit = 100.0
 SPEED = 0.024
 Target = NodePath("../player")
 
 [node name="player" parent="." unique_id=1576353182 instance=ExtResource("2_rwgxs")]
-position = Vector2(318, -32)
+position = Vector2(320, -50)
+
+[node name="Spawnpoint" type="Marker2D" parent="." unique_id=737224279]
+position = Vector2(320, -50)
+gizmo_extents = 50.0
