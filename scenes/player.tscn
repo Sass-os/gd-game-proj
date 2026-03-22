@@ -17,5 +17,3 @@ region_rect = Rect2(0, 0, 1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1442114973]
 shape = SubResource("RectangleShape2D_dqkch")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1006483289]

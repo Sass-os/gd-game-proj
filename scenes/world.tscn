@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ci2karmwwh04t" path="res://PrototypeTilemap16x16.png" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://bedpdfng4cgi8" path="res://scenes/player.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://c8dco8xnegi3t" path="res://scenes/camera.tscn" id="3_4wyf3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rwgxs"]
 texture = ExtResource("1_nnsk1")
@@ -397,3 +398,5 @@ tile_set = SubResource("TileSet_4wyf3")
 
 [node name="player" parent="." unique_id=1576353182 instance=ExtResource("2_rwgxs")]
 position = Vector2(318, -32)
+
+[node name="CameraBody2D" parent="player" unique_id=400209643 instance=ExtResource("3_4wyf3")]

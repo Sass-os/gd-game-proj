@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c8dco8xnegi3t"]
+
+[ext_resource type="Script" uid="uid://dxe4olnyfb8oh" path="res://scenes/camera.gd" id="1_cvpoc"]
+
+[node name="CameraBody2D" type="CharacterBody2D" unique_id=400209643]
+editor_description = "Needs parent to work!
+Folows parent
+"
+script = ExtResource("1_cvpoc")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=846128817]
