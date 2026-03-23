@@ -1,0 +1,8 @@
+[gd_resource type="Curve" format=3 uid="uid://buwa5pbocvvi4"]
+
+[resource]
+resource_local_to_scene = true
+_limits = [1.0, 3.0, 0.0, 0.99]
+bake_resolution = 1000
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.49492896, 1.9742032), 0.0, 0.0, 0, 0, Vector2(0.9801656, 2.5986576), 0.0, 0.0, 0, 0, Vector2(0.99, 3), 0.0, 0.0, 0, 0]
+point_count = 4
