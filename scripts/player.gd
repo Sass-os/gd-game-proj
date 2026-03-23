@@ -26,3 +26,8 @@ func _physics_process(delta: float) -> void:
 		get_tree().quit()
 
 	move_and_slide()
+
+
+
+func take_damage(damage:int)->void:
+	print(damage)

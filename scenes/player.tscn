@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://d1q118hg65ld0" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://ci2karmwwh04t" path="res://PrototypeTilemap16x16.png" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://csrabkcmd1hct" path="res://scripts/hurbox.gd" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
 size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlg0r"]
+size = Vector2(16, 20)
 
 [node name="player" type="CharacterBody2D" unique_id=1576353182]
 script = ExtResource("1_g2els")
@@ -17,3 +21,10 @@ region_rect = Rect2(0, 0, 1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1442114973]
 shape = SubResource("RectangleShape2D_dqkch")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=254531320]
+script = ExtResource("3_qhqgy")
+metadata/_custom_type_script = "uid://csrabkcmd1hct"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=43216534]
+shape = SubResource("RectangleShape2D_qlg0r")

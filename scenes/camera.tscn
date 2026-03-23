@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c8dco8xnegi3t"]
 
-[ext_resource type="Script" uid="uid://dxe4olnyfb8oh" path="res://scenes/camera.gd" id="1_cvpoc"]
+[ext_resource type="Script" uid="uid://dxe4olnyfb8oh" path="res://scripts/camera.gd" id="1_cvpoc"]
 
 [node name="CameraBody2D" type="CharacterBody2D" unique_id=400209643]
 editor_description = "Needs parent to work!
